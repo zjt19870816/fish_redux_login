@@ -12,7 +12,7 @@ Effect<SplashState> buildEffect() {
 }
 
 void _onInit(Action action, Context<SplashState> ctx){
-  Future.delayed(Duration(seconds: 3),(){
+  Future.delayed(Duration(seconds: 1),(){
     Navigator.pushNamedAndRemoveUntil(ctx.context, 'login_page', (router) => router == null);
   });
 }
